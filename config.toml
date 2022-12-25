@@ -39,6 +39,9 @@ paginate     = 10
 [[params.social]]
   name = "linkedin"
   url = "www.linkedin.com/in/elhamza9"
+[[params.social]]
+  name = "email"
+  url = "hello@elhamza9.com"
 
 [languages]
   [languages.en]

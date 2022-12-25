@@ -1,0 +1,77 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+theme = 'hello-friend-ng'
+
+paginate     = 10
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+
+  # Subtitle for home
+  #homeSubtitle = "A Blog about Backend Engineering"
+  homeSubtitle = "Backend Engineer (Go, Python)"
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Enable sharing buttons, if you like
+  enableSharingButtons = true
+
+  # Metadata mostly used in document's head
+  description = "Hamza's Blog about Backend Engineering"
+  keywords = "homepage, blog"
+  images = [""]
+
+[taxonomies]
+    category = "blog"
+    tag      = "tags"
+    series   = "series"
+
+[[params.social]]
+  name = "github"
+  url = "https://github.com/elhamza9"
+[[params.social]]
+  name = "twitter"
+  url = "https://twitter.com/elhamza90"
+[[params.social]]
+  name = "linkedin"
+  url = "www.linkedin.com/in/elhamza9"
+
+[languages]
+  [languages.en]
+    title = "Hamza El Bouatmani"
+    subtitle = "Backend Engineer"
+    keywords = ""
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    readOtherPosts = "Read other posts"
+
+    [languages.en.params.logo]
+      logoText = "Hamza's Blog"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+
+  [languages.ar]
+    title = "حمزة البعثماني"
+    homeSubtitle = "(Go, Python) مهندس برمجيات"
+    keywords = ""
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    readOtherPosts = "Read other posts"
+
+    [languages.ar.params.logo]
+      logoText = "مدونة حمزة"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+  # And you can even create generic menu
+  [[menu.main]]
+    identifier = "blog"
+    name       = "Blog"
+    url        = "/posts"
